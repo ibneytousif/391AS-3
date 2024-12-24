@@ -1,6 +1,6 @@
 <?php
-// admin.php - Admin Panel for managing appointments
-include 'db.php'; // Include the database connection
+
+include 'db.php'; 
 
 // Fetch appointments
 $result = $conn->query("SELECT appointments.appointment_id, clients.name, clients.phone, clients.car_license_number, appointments.appointment_date, mechanics.name AS mechanic_name 
